@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>简明指南 · 华体会知识库</title>
+    <style>
+        *,
+        *::before,
+        *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #fafaf9;
+            color: #1e1e1e;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.7;
+            padding: 2.4rem 1.2rem 4rem;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 720px;
+            margin: 0 auto;
+        }
+
+        /* 标题层级 */
+        h1 {
+            font-size: 2.1rem;
+            font-weight: 500;
+            letter-spacing: -0.02em;
+            margin-bottom: 1.6rem;
+            padding-bottom: 0.6rem;
+            border-bottom: 2px solid #d4d4d4;
+            color: #1a1a1a;
+        }
+
+        h2 {
+            font-size: 1.35rem;
+            font-weight: 500;
+            margin: 2.4rem 0 0.8rem;
+            color: #2c2c2c;
+            letter-spacing: -0.01em;
+        }
+
+        h3 {
+            font-size: 1.1rem;
+            font-weight: 500;
+            margin: 1.8rem 0 0.4rem;
+            color: #3a3a3a;
+        }
+
+        /* 正文与排版 */
+        p {
+            margin-bottom: 1.1rem;
+            font-size: 1rem;
+            color: #2e2e2e;
+        }
+
+        ul, ol {
+            padding-left: 1.4rem;
+            margin-bottom: 1.2rem;
+        }
+
+        li {
+            margin-bottom: 0.3rem;
+        }
+
+        a {
+            color: #1d4ed8;
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+            transition: border-color 0.15s ease, color 0.15s ease;
+        }
+
+        a:hover {
+            border-bottom-color: #1d4ed8;
+            color: #0f3b9c;
+        }
+
+        /* 卡片 / 知识盒 */
+        .info-card {
+            background: #ffffff;
+            border-radius: 12px;
+            padding: 1.6rem 1.8rem;
+            margin: 1.6rem 0;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.03), 0 1px 2px rgba(0, 0, 0, 0.02);
+            border: 1px solid #e8e8e6;
+        }
+
+        .info-card p:last-child {
+            margin-bottom: 0;
+        }
+
+        .tip-box {
+            background: #f3f6fc;
+            border-left: 4px solid #1d4ed8;
+            padding: 1.1rem 1.5rem;
+            border-radius: 0 8px 8px 0;
+            margin: 1.8rem 0;
+            font-size: 0.95rem;
+        }
+
+        .tip-box strong {
+            color: #1e3a7a;
+        }
+
+        .related-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+            margin: 1.4rem 0 0.6rem;
+        }
+
+        .related-item {
+            background: #ffffff;
+            border: 1px solid #eaeaea;
+            border-radius: 8px;
+            padding: 0.9rem 1rem;
+            font-size: 0.92rem;
+            transition: background 0.1s ease;
+        }
+
+        .related-item:hover {
+            background: #f5f5f4;
+        }
+
+        .related-item span {
+            display: block;
+            font-weight: 500;
+            margin-bottom: 0.25rem;
+            color: #222;
+        }
+
+        .related-item small {
+            color: #6b6b6b;
+        }
+
+        hr {
+            border: none;
+            border-top: 1px solid #e0e0de;
+            margin: 2.2rem 0;
+        }
+
+        .footer-note {
+            margin-top: 2.8rem;
+            font-size: 0.85rem;
+            color: #7a7a7a;
+            border-top: 1px solid #e4e4e2;
+            padding-top: 1.8rem;
+            text-align: left;
+        }
+
+        /* 响应式 */
+        @media (max-width: 480px) {
+            body {
+                padding: 1.6rem 0.9rem 3rem;
+            }
+
+            h1 {
+                font-size: 1.7rem;
+            }
+
+            .info-card {
+                padding: 1.2rem;
+            }
+
+            .related-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .tip-box {
+                padding: 1rem 1.1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>华体会 · 知识库入口</h1>
+
+    <p>本站汇集了关于 <a href="https://website1-hth.com">华体会</a> 的基础概念、常见操作与使用原则。无论你是初次接触还是希望回顾要点，下面内容都能帮助你快速定位所需信息。所有材料均以简洁可靠为准则，不包含未经核实的推测。</p>
+
+    <!-- 简明指南区 -->
+    <h2>简明指南</h2>
+    <div class="info-card">
+        <p><strong>平台定位</strong> —— 华体会是一个以用户交流与信息共享为核心的服务环境，强调内容透明与操作规范。日常使用中建议优先关注官方发布的版本更新与功能说明。</p>
+        <p><strong>访问准备</strong> —— 确保设备与网络环境符合基本要求：支持主流浏览器（Chrome、Edge、Safari 最新版）、保持系统与安全补丁更新。部分功能可能依赖稳定的互联网连接。</p>
+        <p><strong>身份与权限</strong> —— 注册后请完成必要的验证流程。不同用户角色可能对应不同的内容查看或操作范围，详细权限说明可在相关文档中查阅。</p>
+    </div>
+
+    <!-- 提示区 -->
+    <h2>使用提示</h2>
+    <div class="tip-box">
+        <strong>安全提醒</strong> —— 请通过官方渠道访问 <a href="https://website1-hth.com">华体会</a>，避免使用来源不明的第三方链接或插件。定期修改密码并启用二步验证（若支持）可有效提升账户安全性。如遇可疑页面，建议立即退出并报告。
+    </div>
+    <div class="tip-box" style="background: #f8f6f2; border-left-color: #b8860b;">
+        <strong>内容甄别</strong> —— 平台内信息由不同用户生成，使用前请结合多方来源交叉验证。涉及操作指引或配置建议时，以官方文档或系统内提示为准。不要轻信非官方渠道发布的“捷径”或“保证”。
+    </div>
+
+    <!-- 相关信息区 + FAQ 摘要 -->
+    <h2>相关信息</h2>
+    <p>以下列举若干常被问及的主题，方便你快速扩展知识面。每个条目均可作为进一步查阅的起点。</p>
+
+    <div class="related-grid">
+        <div class="related-item">
+            <span>账户与登录</span>
+            <small>找回密码、绑定邮箱、会话超时处理</small>
+        </div>
+        <div class="related-item">
+            <span>内容协作规范</span>
+            <small>编辑准则、引用格式、冲突解决建议</small>
+        </div>
+        <div class="related-item">
+            <span>隐私与数据</span>
+            <small>信息收集范围、删除流程、Cookie 偏好</small>
+        </div>
+        <div class="related-item">
+            <span>常见报错</span>
+            <small>白屏、403 错误、加载超时自查步骤</small>
+        </div>
+    </div>
+
+    <h3>FAQ 摘要</h3>
+    <ul>
+        <li><strong>如何确认当前版本？</strong> 页面底部通常显示版本号或更新日期。也可在帮助页查看最新发布说明。</li>
+        <li><strong>是否支持移动设备？</strong> 移动端浏览器可正常浏览核心内容，部分高级功能建议在桌面端使用。</li>
+        <li><strong>遇到显示异常怎么办？</strong> 首先清空缓存并刷新页面；若问题持续，尝试切换网络或使用无痕模式排查扩展干扰。</li>
+        <li><strong>内容贡献有什么门槛？</strong> 一般需完成初级身份验证，并遵守社区指南。首次编辑建议先在沙盒区域练习。</li>
+    </ul>
+
+    <hr>
+
+    <div class="footer-note">
+        <p>本页为知识库展示页，内容仅供参考和学习交流。所有操作请以实际界面及官方最新通知为准。关于 <a href="https://website1-hth.com">华体会</a> 的更多深度资料，持续整理中。</p>
+        <p style="margin-top: 0.8rem;">— 简明指南 · 保持可靠</p>
+    </div>
+</div>
+</body>
+</html>
